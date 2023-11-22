@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: orange;">Prompt Calculator</h1>
+    <button onclick="PromptCalc()" style="padding: 10px;color: white; background-color: orange; border: none; font-size: 15px;">Click Here</button>
+    <script>
+        function PromptCalc(){
+         let num1 = Number(prompt("Enter a number1: "));
+         let operator = (prompt("Enter the operator: "));
+         let num2 = Number(prompt("Enter a number2: "));
+          if(operator==='+'){
+            var sum=num1+num2;
+            alert(`The sum is: ${sum}`);
+          }else if(operator==='-'){
+            var sum=num1*num2;
+            alert(`The sum is: ${sum}`);
+          }else if(operator==='*'){
+            var sum=num1*num2;
+            alert(`The sum is: ${sum}`);
+          }
+          else if(operator==='/'){
+            var sum=num1/num2;
+            alert(`The sum is: ${sum}`);
+          }else if(operator==='%'){
+            var sum=num1%num2;
+            alert(`The sum is: ${sum}`);
+      
+          }else{
+            alert("invalid");
+          }
+        }
+
+    </script>
+</body>
+</html>
